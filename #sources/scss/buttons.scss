@@ -1,0 +1,18 @@
+button {
+    &:hover {
+        border:  #4a89d7 2px solid;
+        transition: all 0.05s ;
+    }
+
+    &:focus {
+        background-color: #3350e1ed;
+        transition: all 0.1s ;
+    }
+    
+    &:active {
+        font-size: 17px;
+        transition: all 0.01s ;
+    }
+
+
+}
