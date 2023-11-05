@@ -9,7 +9,6 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
 }
 
 .button-container {
@@ -20,8 +19,8 @@ body {
 }
 
 .button {
-    height: 4vh;
-    width: 8vw;
+    height: 4vh; //1/8
+    width: 8vw; //1/16
     background-color: #4a70d7;
 
  
@@ -31,7 +30,22 @@ body {
 
 
 .choose-color {
-     // свойства шрифта
      font-size: 16px;
      color: white;
 }
+
+@media (max-width: 1024px) {
+    // $heigth: 6vh;
+    // $width: 10vw;
+
+    .button {
+        height: $height;
+        width: $width;
+//         &:active {
+//             height: Math($heigth * (9 / 8) );
+//             width: Math($width * (17 / 16));
+//         }
+    }
+}
+
+
